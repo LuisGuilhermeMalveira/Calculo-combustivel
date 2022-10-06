@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./assets/reset.css" />
+		<link rel="stylesheet" href="./assets/style.css" />
+		<title>Calculo de combustível</title>
+	</head>
+	<body>
+		<header>
+			<h1>Qual vale mais a pena: Alcool ou gasolina?</h1>
+		</header>
+		<main>
+			<section class="textoIntro">
+				<h2>
+					Faça as contas para saber o que é mais vantajoso na hora de abastecer
+					seu veículo.
+				</h2>
+			</section>
+			<section class="caixa">
+				<h3>Insira os valores:</h3>
+				<ul>
+					<li>
+						Autonomia na gasolina:
+						<input class="autoGasolina" type="number" /> Km/l
+					</li>
+					<li>
+						Valor da gasolina(litro):
+						<input class="valorGas" type="number" /> Reais
+					</li>
+					<li>
+						Autonomia no álcool: <input class="autoAlcool" type="number" /> Km/l
+					</li>
+					<li>
+						Valor do álcool(litro):
+						<input class="valorAlcool" type="number" /> Reais
+					</li>
+				</ul>
+				<button class="submit" onclick="clicar()">Calcule</button>
+			</section>
+		</main>
+		<footer>Site produzido por Luis Guilherme Malveira</footer>
+	</body>
+	<script src="./assets/main.js"></script>
+</html>
