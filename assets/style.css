@@ -7,12 +7,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  line-height: normal;
   font-family: "Smooch Sans", sans-serif;
   background-color: var(--cinza);
   background-repeat: no-repeat;
-  position: center center;
   height: 100vh;
+  background-image: url(./img/background.jpg);
+  background-size: cover;
 }
+
 header {
   height: 70px;
   font-weight: bold;
@@ -23,11 +26,17 @@ input {
   width: 40px;
   height: 20px;
   border-radius: 5px;
-  background-color: var(--cinza);
+  background-color: #f4f4f4;
   border: var(--atencao);
   border-style: solid;
   border-width: 2px;
+  cursor: pointer;
   text-align: center;
+}
+
+input:hover {
+  background-color: var(--atencao);
+  border-color: black;
 }
 
 button {
@@ -43,38 +52,64 @@ button {
   border-radius: 5px;
   padding: 5px 20px;
   cursor: pointer;
+  box-shadow: -3px 4px 10px 0px rgba(50, 50, 50, 0.75);
+}
+button:hover {
+  color: black;
+}
+
+.btnSubmit {
+  align-self: center;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: var(--atencao);
+  margin-bottom: 30px;
+  box-shadow: -3px 4px 10px 0px rgba(50, 50, 50, 0.75);
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 3px;
+  font-family: "Smooch Sans", sans-serif;
+}
+
+.btnSubmit:hover {
+  color: var(--atencao);
+  background-color: white;
+  border-color: var(--atencao);
 }
 
 main {
   display: grid;
   gap: auto;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 2fr;
 }
 
 .textoIntro {
   font-size: 48px;
   width: 450px;
   margin: auto;
+  text-shadow: -3px 4px 3px rgba(150, 150, 150, 0.8);
 }
 
 .caixa {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: white;
+  background-color: #e4e4e4;
   border-radius: 10px;
   padding: 20px;
-  height: 400px;
-  width: 300px;
+  height: 500px;
+  width: 400px;
   margin: auto;
-  font-size: 26px;
-  box-shadow: -6px 8px 5px 0px rgba(50, 50, 50, 0.69);
+  font-size: 36px;
+  box-shadow: -6px 8px 5px 0px rgba(50, 50, 50, 0.3);
 }
 
 .caixa h3 {
   text-align: center;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .caixa li {
@@ -87,4 +122,8 @@ footer {
   background-color: grey;
   text-align: center;
   color: white;
+}
+
+.bg {
+  text-decoration: none;
 }

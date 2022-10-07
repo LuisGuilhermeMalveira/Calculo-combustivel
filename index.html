@@ -12,6 +12,7 @@
 		/>
 		<link rel="stylesheet" href="./assets/reset.css" />
 		<link rel="stylesheet" href="./assets/style.css" />
+		<link rel="icon" type="image/x-icon" href="./assets/img/posto.svg" />
 		<title>Calculo de combustível</title>
 	</head>
 	<body>
@@ -21,6 +22,7 @@
 		<main>
 			<section class="textoIntro">
 				<h2>
+					<img src="./assets/img/posto.svg" alt="" />
 					Faça as contas para saber o que é mais vantajoso na hora de abastecer
 					seu veículo.
 				</h2>
@@ -30,24 +32,35 @@
 				<ul>
 					<li>
 						Autonomia na gasolina:
-						<input class="autoGasolina" type="number" /> Km/l
+						<input class="autoGas" type="text" /> Km/l
 					</li>
 					<li>
-						Valor da gasolina(litro):
-						<input class="valorGas" type="number" /> Reais
+						Valor da gasolina (litro):
+						<input class="valorGas" type="text" /> Reais
 					</li>
 					<li>
-						Autonomia no álcool: <input class="autoAlcool" type="number" /> Km/l
+						Autonomia no álcool:
+						<input class="autoAlcool" type="text" /> Km/l
 					</li>
 					<li>
-						Valor do álcool(litro):
-						<input class="valorAlcool" type="number" /> Reais
+						Valor do álcool (litro):
+						<input class="valorAlcool" type="text" /> Reais
 					</li>
 				</ul>
-				<button class="submit" onclick="clicar()">Calcule</button>
+				<input
+					onclick="capturar()"
+					type="submit"
+					class="btnSubmit"
+					value="Calcule"
+				/>
 			</section>
 		</main>
-		<footer>Site produzido por Luis Guilherme Malveira</footer>
+		<footer>
+			Site produzido por Luís Guilherme Malveira <br />
+			<a class="bg" href="https://pt.vecteezy.com/vetor-gratis/papel-de-parede"
+				>Papel De Parede Vetores por Vecteezy</a
+			>
+		</footer>
 	</body>
 	<script src="./assets/main.js"></script>
 </html>
