@@ -97,6 +97,10 @@ main {
   text-align: justify;
 }
 
+.erro {
+  color: var(--atencao);
+}
+
 .caixa {
   display: flex;
   flex-direction: column;
