@@ -2,7 +2,7 @@
 
 ## Bem-Vindo! 👋
 
-Nesse projeto tentei fazer uma interface estilizada para calcular qual combustível é mais vantajoso ao abastecer seu carro flex.
+Nesse projeto criei uma interface estilizada para calcular qual combustível é mais vantajoso ao abastecer seu carro flex.
 
 ## Índice:
 
