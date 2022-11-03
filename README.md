@@ -7,7 +7,7 @@ Nesse projeto criei uma interface estilizada para calcular qual combustível é 
 ## Índice:
 
 - [Visão Geral](#visao-geral)
-  - [Link do Projeto](#link-do-projeto)
+  - [Deploy](#deploy)
   - [Screenshots](#screenshots)
 - [Meu processo](#meu-processo)
   - [Feito com](#feito-com)
