@@ -46,12 +46,11 @@ function capturar() {
 			textoInfo.textContent = textoResultado;
 		} else {
 			textoInfo.classList.remove("erro");
-			let textoResultado =
-				"O valor do Km da gasolina é " +
-				valorKMG.toFixed(2) * 100 +
-				" centavos e o Km do alcool é " +
-				valorKMA.toFixed(2) * 100 +
-				" centavos. Então não faz diferença o combustível.";
+			let textoResultado = `O valor do Km da gasolina é ${
+				valorKMG.toFixed(2) * 100
+			} centavo o Km do álcool é ${
+				valorKMA.toFixed(2) * 100
+			} centavos. Então não faz diferença o combustível.`;
 
 			textoInfo.textContent = textoResultado;
 		}
