@@ -7,24 +7,27 @@ function capturar() {
 	let valorKMG = valorG / autoG;
 	let valorKMA = valorA / autoA;
 
+	let autoMax = 100;
+	let valorMax = 10;
+
 	let textoInfo = document.querySelector("#textoInfo");
 
 	let mensagemErro = [
 		`O valor do Km da gasolina é ${
 			valorKMG.toFixed(2) * 100
-		} centavo o Km do álcool é ${
+		} centavos o Km do álcool é ${
 			valorKMA.toFixed(2) * 100
 		} centavos. Então é melhor abastecer com gasolina.`,
 
 		`O valor do Km da gasolina é ${
 			valorKMG.toFixed(2) * 100
-		} centavo o Km do álcool é ${
+		} centavos o Km do álcool é ${
 			valorKMA.toFixed(2) * 100
 		} centavos. Então é melhor abastecer com álcool.`,
 
 		`O valor do Km da gasolina é ${
 			valorKMG.toFixed(2) * 100
-		} centavo o Km do álcool é ${
+		} centavos o Km do álcool é ${
 			valorKMA.toFixed(2) * 100
 		} centavos. Então não faz diferença o combustível.`,
 	];
@@ -38,19 +41,19 @@ function capturar() {
 	}
 
 	function validacao() {
-		if (autoG > 100 || autoG < 0) {
+		if (autoG > autoMax || autoG < 0) {
 			textoInfo.classList.add("erro");
 			textoInfo.textContent =
 				"Insira um valor entre 0 e 100 no campo: Autonomia na gasolina.";
-		} else if (valorG > 10 || valorG < 0) {
+		} else if (valorG > valorMax || valorG < 0) {
 			textoInfo.classList.add("erro");
 			textoInfo.textContent =
 				"Insira um valor entre 0 e 10 no campo: Valor da gasolina.";
-		} else if (autoA > 100 || valorG < 0) {
+		} else if (autoA > autoMax || valorG < 0) {
 			textoInfo.classList.add("erro");
 			textoInfo.textContent =
 				"Insira um valor entre 0 e 100 no campo: Autonomia no álcool.";
-		} else if (valorA > 10 || valorG < 0) {
+		} else if (valorA > valorMax || valorG < 0) {
 			textoInfo.classList.add("erro");
 			textoInfo.textContent =
 				"Insira um valor entre 0 e 10 no campo: Valor no álcool.";
