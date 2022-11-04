@@ -90,11 +90,14 @@ main {
 }
 
 #textoInfo {
-  font-size: 38px;
+  font-size: 34px;
   width: 400px;
   margin: auto;
   text-shadow: -3px 4px 3px rgba(150, 150, 150, 0.8);
   text-align: justify;
+  text-align: center;
+  height: 150px;
+  line-height: 1em;
 }
 
 .erro {
@@ -115,6 +118,13 @@ main {
   box-shadow: -6px 8px 5px 0px rgba(50, 50, 50, 0.3);
 }
 
+.caixa p {
+  font-size: 20px;
+  color: var(--atencao);
+  justify-content: center;
+  display: flex;
+}
+
 .caixa h3 {
   text-align: center;
   font-weight: bold;
@@ -127,6 +137,11 @@ main {
   width: 100%;
 }
 
+.caixa div {
+  align-self: center;
+  text-align: center;
+}
+
 footer {
   background-color: grey;
   text-align: center;
@@ -135,6 +150,15 @@ footer {
 
 .bg {
   text-decoration: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 @media (max-width: 900px) {
@@ -161,5 +185,14 @@ footer {
     margin: 10px;
     width: auto;
     min-width: 310px;
+  }
+}
+
+@keyframes amination {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
